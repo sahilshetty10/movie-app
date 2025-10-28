@@ -8,7 +8,7 @@ const Watch = () => {
       <iframe
         title="movie"
         className="w-full h-screen"
-        src={`https://www.2embed.ru/embed/tmdb/${type}?id=${id}`}
+        src={type=='tv'?`https://www.2embed.cc/embedtv/${id}`:`https://www.2embed.cc/embed/${id}`}
       ></iframe>
     </div>
   );
